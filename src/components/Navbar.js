@@ -28,17 +28,27 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
+
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRVL
-            <i class='fab fa-typo3' />
+          <img src="/images/logo-w.png" alt="logo" width="200" />
           </Link>
+
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
+              <Link to='/report' className='nav-links' onClick={closeMobileMenu}>
+                Rivkin Report
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/portfolios'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Investment Portfolios
               </Link>
             </li>
             <li className='nav-item'>
@@ -47,18 +57,20 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Services
+                More Services
               </Link>
             </li>
-            <li className='nav-item'>
+            <div>
+            <li className='nav-item-search'>
               <Link
-                to='/products'
+                to='/search'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Products
+                Search
               </Link>
             </li>
+            </div>
 
             <li>
               <Link
@@ -69,6 +81,8 @@ function Navbar() {
                 Sign Up
               </Link>
             </li>
+
+            
           </ul>
           {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>

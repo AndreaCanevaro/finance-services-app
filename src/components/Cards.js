@@ -5,43 +5,51 @@ import CardItem from './CardItem';
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Check out these EPIC Destinations!</h1>
+      <h3>Latest Updates</h3>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-9.jpg'
-              text='Explore the hidden waterfall deep inside the Amazon Jungle'
-              label='Adventure'
+              src='images/img-2b.jpg'
+              text='Lorem impsum'
+              label='Lorem 1'
               path='/services'
             />
             <CardItem
-              src='images/img-2.jpg'
-              text='Travel through the Islands of Bali in a Private Cruise'
-              label='Luxury'
+              src='images/img-2b.jpg'
+              text='Lorem ipsum'
+              label='Lorem 2'
+              path='/services'
+            />
+            <CardItem
+              src='images/img-2b.jpg'
+              text='Lorem ipsum'
+              label='Lorem 3'
+              path='/services'
+            />
+            <CardItem
+              src='images/img-2b.jpg'
+              text='Lorem ipsum'
+              label='Lorem 4'
+              path='/services'
+            />
+            <CardItem
+              src='images/img-2b.jpg'
+              text='Lorem ipsum'
+              label='Lorem 5'
               path='/services'
             />
           </ul>
+          <h3>About ASX Grouth Portfolio</h3>
           <ul className='cards__items'>
-            <CardItem
-              src='images/img-3.jpg'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-              label='Mystery'
+             <CardItem
+              src='images/img-8b.jpg'
+              text='Lorem ipsum'
+              label='Lorem 4'
               path='/services'
             />
-            <CardItem
-              src='images/img-4.jpg'
-              text='Experience Football on Top of the Himilayan Mountains'
-              label='Adventure'
-              path='/products'
-            />
-            <CardItem
-              src='images/img-8.jpg'
-              text='Ride through the Sahara Desert on a guided camel tour'
-              label='Adrenaline'
-              path='/sign-up'
-            />
           </ul>
+          <h3>Dividends, IPOs and more</h3>
         </div>
       </div>
     </div>
