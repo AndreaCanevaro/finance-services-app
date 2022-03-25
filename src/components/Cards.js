@@ -10,31 +10,31 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-2b.jpg'
+              src='images/img-2b1.jpg'
               text='Lorem impsum'
               label='Lorem 1'
               path='/services'
             />
             <CardItem
-              src='images/img-2b.jpg'
+              src='images/img-2b1.jpg'
               text='Lorem ipsum'
               label='Lorem 2'
               path='/services'
             />
             <CardItem
-              src='images/img-2b.jpg'
+              src='images/img-2b1.jpg'
               text='Lorem ipsum'
               label='Lorem 3'
               path='/services'
             />
             <CardItem
-              src='images/img-2b.jpg'
+              src='images/img-2b1.jpg'
               text='Lorem ipsum'
               label='Lorem 4'
               path='/services'
             />
             <CardItem
-              src='images/img-2b.jpg'
+              src='images/img-2b1.jpg'
               text='Lorem ipsum'
               label='Lorem 5'
               path='/services'
@@ -43,7 +43,7 @@ function Cards() {
           <h3>About ASX Grouth Portfolio</h3>
           <ul className='cards__items'>
              <CardItem
-              src='images/img-8b.jpg'
+              src='images/img-8b1.jpg'
               text='Lorem ipsum'
               label='Lorem 4'
               path='/services'
