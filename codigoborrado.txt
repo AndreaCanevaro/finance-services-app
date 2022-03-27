@@ -38,3 +38,18 @@ About:
         <Link to='/'><h5>Investors</h5></Link>
         <Link to='/'><h5>Terms of Service</h5></Link>
         
+
+
+
+En Home:
+<HeroSection />
+      <Switch>
+          <Route path='/tableassets' component={TableAssets}/>
+      </Switch>
+      
+
+En TableBanner, línea 25
+div className="row">
+        <input type="text" placeholder="Search a Coin" className="form-control bg-dark text-light border-0 mt-4 text-center" onChange={e => setSearch(e.target.value)}/>
+       
+

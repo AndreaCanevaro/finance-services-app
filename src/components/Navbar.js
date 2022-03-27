@@ -39,7 +39,8 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Rivkin Report
+                Rivkin 
+                <div className='nav-item-second'>Report</div>
               </Link>
             </li>
             <li className='nav-item'>
@@ -48,7 +49,8 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Investment Portfolios
+                Investment 
+                <div className='nav-item-second'>Portfolios</div>
               </Link>
             </li>
             <li className='nav-item'>
@@ -57,10 +59,11 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                More Services
+                More 
+                <div className='nav-item-second'>Services</div>
               </Link>
             </li>
-            <div>
+            <div className='nav-item-third'>
             <li className='nav-item-search'>
               <Link
                 to='/search'

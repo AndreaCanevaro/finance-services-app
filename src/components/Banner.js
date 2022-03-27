@@ -3,8 +3,30 @@ import './Banner.css';
 import { Button } from './Button';
 import { Table } from './Table';
 import { Link } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 
 function Banner() {
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener('resize', showButton);
+
+  
   return (
     <div className='banner-container'>
       <div class='banner-links'>
@@ -12,7 +34,16 @@ function Banner() {
         
         <div class='banner-link-items'>
             <h2>Portfolio</h2>
-            <Link to='/'>Table</Link>
+            <Link to='/table'  onClick={closeMobileMenu}>
+              
+            <>
+        <Router>
+          <Switch>
+        <Route path='/table' component={Table} />
+        </Switch>
+        </Router>  
+        </>
+            </Link>
 
         <section class='table'>
           </section>
