@@ -124,35 +124,35 @@ function Cards() {
               className="cards__items1"
               src="images/img-8b1.jpg"
               width={100}
-              height={150}
+              height={100}
               path="/services"
             />
             <img
               className="cards__items1"
               src="images/img-8b1.jpg"
               width={100}
-              height={150}
+              height={100}
               path="/services"
             />
             <img
               className="cards__items1"
               src="images/img-8b1.jpg"
               width={100}
-              height={150}
+              height={100}
               path="/services"
             />
             <img
               className="cards__items1"
               src="images/img-8b1.jpg"
               width={100}
-              height={150}
+              height={100}
               path="/services"
             />
             <img
               className="cards__items1"
               src="images/img-8b1.jpg"
               width={100}
-              height={150}
+              height={100}
               path="/services"
             />
           </div>

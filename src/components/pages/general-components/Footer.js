@@ -1,15 +1,13 @@
 import React from "react";
 import "./Footer.css";
-//import { Button } from "../general-components/Button";
-//import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <footer>
       <div className="footer-container">
-        <div class="footer-links">
+        <div className="footer-links">
           <div className="footer-link-wrapper">
-            <div class="footer-link-items">
+            <div className="footer-link-items">
               <h5>Rivkin Securities</h5>
               <div className="footer-link-items-column">
                 <h6>Address</h6>
@@ -27,7 +25,7 @@ function Footer() {
                 </p>
               </div>
             </div>
-            <div className="footer-link-items">
+            <div className="footer-link-items-redes">
               <h5>Follow Us</h5>
               <ul>
                 <li>
@@ -52,23 +50,23 @@ function Footer() {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="footer-link-wrapper">
-            <div class="footer-link-items">
+
+            <div className="footer-link-items">
               <h5>Explore</h5>
-              <div class="menu-main-menu-container">
-                <ul id="primary-menu" class="menu">
-                  <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1519">
+              <div className="menu-main-menu-container">
+                <ul id="primary-menu" className="menu">
+                  <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1519">
                     <a href="https://rivkin.com.au">Resources</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-
-          <div class="copyright-links mb-30">
-            <nav class="footer-nav">
-              <ul class="flex">
+        </div>
+        <div className="medio">
+          <div className="copyright-links">
+            <nav className="footer-nav">
+              <ul className="flex">
                 <li>
                   <span>© 2022 Rivkin</span>
                 </li>
@@ -85,9 +83,6 @@ function Footer() {
                   <a href="https://rivkin.com.au">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="https://rivkin.com.au">Cookie Policy</a>
-                </li>
-                <li>
                   <a href="https://rivkin.com.au">Important Reading</a>
                 </li>
                 <li>
@@ -98,25 +93,22 @@ function Footer() {
                 <li>
                   <a href="https:///rivkin.com.au">Key Concepts</a>
                 </li>
-                <li>
-                  <a href="https://rivkin.com.au">Complaints Policy</a>
-                </li>
               </ul>
             </nav>
           </div>
+        </div>
 
-          <div class="disclaimer">
-            <p class="extra-small-text color-grey">
-              <span class="color-orange uppercase">Disclaimer:</span> Rivkin
-              aims to provide clear and simple information...
-            </p>
-            <p class="extra-small-text color-grey">
-              <span class="color-orange uppercase">
-                Trading Performance Disclaimer:
-              </span>{" "}
-              Rivkin advise you not to rely solely on back tested...
-            </p>
-          </div>
+        <div className="disclaimer">
+          <p className="extra-small-text color-grey">
+            <span className="color-orange uppercase">Disclaimer:</span> Rivkin
+            aims to provide clear and simple information...
+          </p>
+          <p className="extra-small-text color-grey">
+            <span className="color-orange uppercase">
+              Trading Performance Disclaimer:
+            </span>{" "}
+            Rivkin advise you not to rely solely on back tested...
+          </p>
         </div>
       </div>
     </footer>
