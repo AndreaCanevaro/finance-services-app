@@ -4,7 +4,7 @@ import HeaderBottom from "./HeaderBottom";
 
 const Table = () => {
   return (
-    <div className="table-container">
+    <div style={{ overflowX: "auto" }} className="table-container">
       <table className="table">
         <thead>
           <tr>
