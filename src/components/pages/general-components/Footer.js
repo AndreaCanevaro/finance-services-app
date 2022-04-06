@@ -30,7 +30,7 @@ function Footer() {
               <ul>
                 <li>
                   <a href="https://www.facebook.com">
-                    <i class="fab fa-facebook-f"></i>
+                    <i className="fa-brands fa-facebook"></i>
                   </a>
                 </li>
                 <li>
@@ -63,39 +63,36 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="medio">
-          <div className="copyright-links">
-            <nav className="footer-nav">
-              <ul className="flex">
-                <li>
-                  <span>© 2022 Rivkin</span>
-                </li>
-                <li>
-                  <a href="/contact">Contact</a>
-                </li>
-                <li>
-                  <a href="https://rivkin.com.au">Terms &amp; Conditions</a>
-                </li>
-                <li>
-                  <a href="https://rivkin.com.au">FSG</a>
-                </li>
-                <li>
-                  <a href="https://rivkin.com.au">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="https://rivkin.com.au">Important Reading</a>
-                </li>
-                <li>
-                  <a href="https://rivkin.com.au">
-                    Trading &amp; Performance Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="https:///rivkin.com.au">Key Concepts</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+
+        <div className="copyright-links">
+          <ul className="flex">
+            <li>
+              <span>© 2022 Rivkin</span>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+            <li>
+              <a href="https://rivkin.com.au">Terms &amp; Conditions</a>
+            </li>
+            <li>
+              <a href="https://rivkin.com.au">FSG</a>
+            </li>
+            <li>
+              <a href="https://rivkin.com.au">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="https://rivkin.com.au">Important Reading</a>
+            </li>
+            <li>
+              <a href="https://rivkin.com.au">
+                Trading &amp; Performance Policy
+              </a>
+            </li>
+            <li>
+              <a href="https:///rivkin.com.au">Key Concepts</a>
+            </li>
+          </ul>
         </div>
 
         <div className="disclaimer">
