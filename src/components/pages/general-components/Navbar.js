@@ -25,17 +25,42 @@ function Navbar() {
   window.addEventListener("resize", showButton);
 
   return (
-    <>
-      <nav className="navbar">
-        <div className="navbar-container">
-          <div className="logo-logo">
-            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-              <img src="/images/logo-w.png" alt="logo" width="200" />
-            </Link>
-          </div>
-        </div>
-      </nav>
-    </>
+    <div class="topnav" id="myTopnav">
+      <Link to="/" className="navbar-items" onClick={closeMobileMenu}>
+        <img src="/images/logo-w.png" alt="logo" height={80} width={200} />
+      </Link>
+      <Link to="/home" className="navbar-items">
+        Rivkin
+        <br></br>
+        Report
+      </Link>
+      <Link
+        to="/investmentportfolios"
+        className="nav-items"
+        onClick={closeMobileMenu}
+      >
+        Investment
+        <br></br>
+        Portfolios
+      </Link>
+      <Link to="/moreservices" className="nav-items" onClick={closeMobileMenu}>
+        More
+        <br></br>
+        Services
+      </Link>
+      <Link to="/search" className="nav-items" onClick={closeMobileMenu}>
+        Search
+      </Link>
+      <Link to="/sign-up" className="nav-items-sign" onClick={closeMobileMenu}>
+        Sign Up
+      </Link>
+
+      {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+
+      <a href="javascript:void(0);" className="icon" onclick={handleClick}>
+        <i className="fa fa-bars"></i>
+      </a>
+    </div>
   );
 }
 
