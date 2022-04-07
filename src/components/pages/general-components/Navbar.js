@@ -11,7 +11,7 @@ function Navbar() {
   const closeMobileMenu = () => setClick(false);
 
   const showButton = () => {
-    if (window.innerWidth <= 680) {
+    if (window.innerWidth <= 660) {
       setButton(false);
     } else {
       setButton(true);
@@ -26,10 +26,10 @@ function Navbar() {
 
   return (
     <div class="topnav" id="myTopnav">
-      <Link to="/" className="navbar-items" onClick={closeMobileMenu}>
+      <Link to="/" className="navbar-items-logo" onClick={closeMobileMenu}>
         <img src="/images/logo-w.png" alt="logo" height={80} width={200} />
       </Link>
-      <Link to="/home" className="navbar-items">
+      <Link to="/home" className="nav-items">
         Rivkin
         <br></br>
         Report

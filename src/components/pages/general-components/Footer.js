@@ -14,73 +14,65 @@ function Footer() {
     <footer>
       <div className="footer-container">
         <div className="footer-links">
-          <div className="footer-link-wrapper">
-            <div className="footer-link-items">
-              <h5>Rivkin Securities</h5>
-              <div className="footer-link-items-column">
-                <h6>Address</h6>
-                <p>
-                  1 Kings Cross Road, <br></br>
-                  Rushcutters Bay, NSW 2011
-                </p>
-              </div>
-
-              <div className="footer-link-items-column">
-                <h6>Phone</h6>
-                <p>
-                  1 300 748 546 <br></br>
-                  (1300 RIVKIN)
-                </p>
-              </div>
-            </div>
-            <div className="footer-link-items-redes">
-              <h5>Follow Us</h5>
-              <ul>
-                <li>
-                  <a href="https://www.facebook.com">
-                    <FontAwesomeIcon
-                      icon={faFacebook}
-                      className="hover: text-red-500"
-                    ></FontAwesomeIcon>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com">
-                    <FontAwesomeIcon
-                      icon={faTwitter}
-                      className="hover: text-red-500"
-                    ></FontAwesomeIcon>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com">
-                    <FontAwesomeIcon
-                      icon={faLinkedin}
-                      className="hover: text-red-500"
-                    ></FontAwesomeIcon>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com">
-                    <FontAwesomeIcon
-                      icon={faYoutube}
-                      className="hover: text-red-500"
-                    ></FontAwesomeIcon>
-                  </a>
-                </li>
-              </ul>
+          <div className="footer-link-items">
+            <h5>Rivkin Securities</h5>
+            <div className="footer-link-items-column">
+              <h6>Address</h6>
+              <p>
+                1 Kings Cross Road, <br></br>
+                Rushcutters Bay, NSW 2011
+              </p>
             </div>
 
-            <div className="footer-link-items">
-              <h5>Explore</h5>
-              <div className="menu-main-menu-container">
-                <ul id="primary-menu" className="menu">
-                  <li className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1519">
-                    <a href="https://rivkin.com.au">Resources</a>
-                  </li>
-                </ul>
-              </div>
+            <div className="footer-link-items-column">
+              <h6>Phone</h6>
+              <p>
+                1 300 748 546 <br></br>
+                (1300 RIVKIN)
+              </p>
             </div>
+          </div>
+          <div className="footer-link-items-redes">
+            <h5>Follow Us</h5>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com">
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    className="hover: text-red-500"
+                  ></FontAwesomeIcon>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com">
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    className="hover: text-red-500"
+                  ></FontAwesomeIcon>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com">
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    className="hover: text-red-500"
+                  ></FontAwesomeIcon>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com">
+                  <FontAwesomeIcon
+                    icon={faYoutube}
+                    className="hover: text-red-500"
+                  ></FontAwesomeIcon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="footer-link-items">
+            <h5>Explore</h5>
+            <a href="https://rivkin.com.au">Resources</a>
           </div>
         </div>
 
