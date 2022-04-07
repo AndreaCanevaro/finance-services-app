@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {} from "@fortawesome/free-brands-svg-icons";
+
 import "./index.css";
 import "./App.css";
 import App from "./App";
