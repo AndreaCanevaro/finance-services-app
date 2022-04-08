@@ -8,7 +8,7 @@ const Banner = () => {
   return (
     <div className="container">
       <div className="header">
-        <header className="hea">
+        <header style={{ overflowX: "auto" }} className="hea">
           <br></br>
           <h2 className="welcome">Welcome to Rivkin ASX Growth Portfolio</h2>
           <br></br>
@@ -20,7 +20,7 @@ const Banner = () => {
           </p>
           <br></br>
 
-          <div style={{ overflowX: "auto" }} className="banner-titles">
+          <div className="banner-titles">
             <div className="banner-titles-portfolio">
               <h3 className="header-portfolio">Portfolio</h3>
             </div>

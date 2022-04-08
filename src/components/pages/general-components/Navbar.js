@@ -3,6 +3,11 @@ import { Button } from "./Button";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
+import Home from "../home//Home";
+import InvestmentPortfolios from "../investment-portfolio/InvestmentPortfolios";
+import MoreServices from "../more-services/MoreServices";
+import SignUp from "../sign-up/SignUp";
+
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
@@ -25,40 +30,77 @@ function Navbar() {
   window.addEventListener("resize", showButton);
 
   return (
-    <div class="topnav" id="myTopnav">
-      <Link to="/" className="navbar-items-logo" onClick={closeMobileMenu}>
-        <img src="/images/logo-w.png" alt="logo" height={80} width={200} />
-      </Link>
-      <Link to="/home" className="nav-items">
-        Rivkin
-        <br></br>
-        Report
-      </Link>
-      <Link
-        to="/investmentportfolios"
-        className="nav-items"
-        onClick={closeMobileMenu}
-      >
-        Investment
-        <br></br>
-        Portfolios
-      </Link>
-      <Link to="/moreservices" className="nav-items" onClick={closeMobileMenu}>
-        More
-        <br></br>
-        Services
-      </Link>
-      <Link to="/search" className="nav-items" onClick={closeMobileMenu}>
-        Search
-      </Link>
-      <Link to="/sign-up" className="nav-items-sign" onClick={closeMobileMenu}>
-        {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
-      </Link>
-
-      <a href="javascript:void(0);" className="icon" onclick={handleClick}>
-        <i className="fa fa-bars"></i>
-      </a>
-    </div>
+    <>
+      <nav className="navbar">
+        <div class="topnav" id="myTopnav">
+          <Link
+            to="/"
+            exact
+            component={<Home />}
+            className="navbar-items-logo"
+            onClick={closeMobileMenu}
+          >
+            <img src="/images/logo-w.png" alt="logo" height={80} width={200} />
+          </Link>
+          <div className="menu-icon" onClick={handleClick}>
+            <i className={click ? "fas fa-times" : "fas fa-bars"} />
+          </div>
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
+              <Link to="/home" exact component={<Home />} className="nav-links">
+                Rivkin
+                <br></br>
+                Report
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/investmentportfolios"
+                component={<InvestmentPortfolios />}
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Investment
+                <br></br>
+                Portfolios
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/moreservices"
+                component={<MoreServices />}
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                More
+                <br></br>
+                Services
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                to="/search"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                Search
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/sign-up"
+                component={<SignUp />}
+                className="nav-links-sign"
+                onClick={closeMobileMenu}
+              >
+                Sign Up
+              </Link>
+            </li>
+          </ul>
+          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+        </div>
+      </nav>
+    </>
   );
 }
 

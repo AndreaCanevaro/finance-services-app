@@ -11,7 +11,7 @@ function Cards() {
           </h3>
         </div>
 
-        <div className="cards__wrapper">
+        <div style={{ overflowX: "auto" }} className="cards__wrapper">
           <img
             className="cards__items1"
             src="images/img-stocks1.jpg"
@@ -55,7 +55,7 @@ function Cards() {
           <h3 className="cards-titles">Latest Updates</h3>
         </div>
 
-        <div className="cards__wrapper">
+        <div style={{ overflowX: "auto" }} className="cards__wrapper">
           <img
             className="cards__items2"
             src="images/img-2b1.jpg"
@@ -116,7 +116,7 @@ function Cards() {
           <h3 className="cards-titles">Dividends, IPOs and more</h3>
         </div>
 
-        <div className="cards__wrapper">
+        <div style={{ overflowX: "auto" }} className="cards__wrapper">
           <img
             className="cards__items1"
             src="images/img-8b1.jpg"

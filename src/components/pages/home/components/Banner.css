@@ -2,7 +2,6 @@
   box-sizing: border-box;
   background-color: #313131;
   color: #fff;
-  flex-wrap: wrap;
 }
 .header {
     box-sizing: border-box;

@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  display: block;
+  background: linear-gradient(10deg, rgb(247, 244, 244) 20%, rgb(26, 26, 23) 100%);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.nav-items {
+  float: left;
+  display: block;
+  color: #070707;
+  text-align: center;
+  margin:  14px 16px 0px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.nav-items:hover {
+  color: rgb(253, 253, 253);
+  border-bottom: 4px solid #fff;
+  transition: all 0.2s ease-out;
+}
+.nav-items-sign{
+  float: right;
+  display: block;
+  margin:  14px 16px 0px 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  
+}
+.navbar-items-logo{
+  float: left;
+}
+.topnav .icon {
+  display: none;
+}
+
+
+.nav-menu {
+  display: flex;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  justify-content: end;
+  margin-right: 2rem; 
+}
+.fa-bars {
+  color: #fff;
+}
+
+.menu-icon {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 660px) {
+  .topnav a:not(:first-child) {
+    display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 660px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .navlogo{
+    height: 130;
+    width: 50;
+  }
+}

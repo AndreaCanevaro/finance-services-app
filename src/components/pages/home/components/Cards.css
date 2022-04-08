@@ -37,7 +37,10 @@ margin-bottom: 50px;
 @media screen and (max-width: 560px) {
   .cards__wrapper {
     display: block;
+    padding: 15px;
+    justify-content: space-around;
   }
+  
   .cards__items-video iframe {
     left: 20px;
   }
